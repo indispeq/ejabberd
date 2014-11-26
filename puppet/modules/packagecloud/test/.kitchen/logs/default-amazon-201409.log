@@ -1,591 +1,0 @@
-I, [2014-10-28T11:55:40.592664 #21692]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-28T11:55:40.592786 #21692]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-28T11:55:40.593234 #21692]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.00s).
-I, [2014-10-28T11:55:40.593414 #21692]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-28T11:55:40.593485 #21692]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-E, [2014-10-28T11:55:41.878537 #21692] ERROR -- default-amazon-201409: Create failed on instance <default-amazon-201409>.
-E, [2014-10-28T11:55:41.878664 #21692] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T11:55:41.878694 #21692] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T11:55:41.878708 #21692] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-east-1b]
-E, [2014-10-28T11:55:41.878720 #21692] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T11:55:41.878733 #21692] ERROR -- default-amazon-201409: Class: Fog::Compute::AWS::Error
-E, [2014-10-28T11:55:41.878744 #21692] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-east-1b]
-E, [2014-10-28T11:55:41.878756 #21692] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T11:55:41.878768 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
-E, [2014-10-28T11:55:41.878781 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
-E, [2014-10-28T11:55:41.878794 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T11:55:41.878806 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T11:55:41.878819 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T11:55:41.878831 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T11:55:41.878844 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T11:55:41.878856 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:55:41.878868 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T11:55:41.878880 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T11:55:41.878892 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
-E, [2014-10-28T11:55:41.878918 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T11:55:41.878933 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T11:55:41.878947 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T11:55:41.878978 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-28T11:55:41.878995 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-28T11:55:41.879008 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:55:41.879031 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-28T11:55:41.879043 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T11:55:41.879055 #21692] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T11:55:41.879068 #21692] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-28T11:56:50.675946 #21754]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-28T11:56:50.676199 #21754]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-28T11:56:50.676604 #21754]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.00s).
-I, [2014-10-28T11:56:50.677515 #21754]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-28T11:56:50.677714 #21754]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-E, [2014-10-28T11:56:51.769803 #21754] ERROR -- default-amazon-201409: Create failed on instance <default-amazon-201409>.
-E, [2014-10-28T11:56:51.769926 #21754] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T11:56:51.769947 #21754] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T11:56:51.769961 #21754] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-east-1]
-E, [2014-10-28T11:56:51.769974 #21754] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T11:56:51.769986 #21754] ERROR -- default-amazon-201409: Class: Fog::Compute::AWS::Error
-E, [2014-10-28T11:56:51.769998 #21754] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-east-1]
-E, [2014-10-28T11:56:51.770010 #21754] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T11:56:51.770021 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
-E, [2014-10-28T11:56:51.770034 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
-E, [2014-10-28T11:56:51.770046 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T11:56:51.770058 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T11:56:51.770070 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T11:56:51.770083 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T11:56:51.770095 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T11:56:51.770138 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:56:51.770154 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T11:56:51.770167 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T11:56:51.770179 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
-E, [2014-10-28T11:56:51.770192 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T11:56:51.770205 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T11:56:51.770218 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T11:56:51.770230 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-28T11:56:51.770252 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-28T11:56:51.770264 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:56:51.770276 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-28T11:56:51.770288 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T11:56:51.770301 #21754] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T11:56:51.770313 #21754] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-28T11:57:39.737177 #21812]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-28T11:57:39.737439 #21812]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-28T11:57:39.737834 #21812]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.00s).
-I, [2014-10-28T11:57:39.738663 #21812]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-28T11:57:39.738784 #21812]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-E, [2014-10-28T11:57:40.932253 #21812] ERROR -- default-amazon-201409: Create failed on instance <default-amazon-201409>.
-E, [2014-10-28T11:57:40.932381 #21812] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T11:57:40.932405 #21812] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T11:57:40.932421 #21812] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-east-1]
-E, [2014-10-28T11:57:40.932436 #21812] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T11:57:40.932451 #21812] ERROR -- default-amazon-201409: Class: Fog::Compute::AWS::Error
-E, [2014-10-28T11:57:40.932465 #21812] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-east-1]
-E, [2014-10-28T11:57:40.932480 #21812] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T11:57:40.932494 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
-E, [2014-10-28T11:57:40.932532 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
-E, [2014-10-28T11:57:40.932551 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T11:57:40.932565 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T11:57:40.932580 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T11:57:40.932594 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T11:57:40.932609 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T11:57:40.932623 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:57:40.932637 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T11:57:40.932651 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T11:57:40.932666 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
-E, [2014-10-28T11:57:40.932680 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T11:57:40.932694 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T11:57:40.932708 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T11:57:40.932723 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-28T11:57:40.932737 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-28T11:57:40.932751 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:57:40.932765 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-28T11:57:40.932780 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T11:57:40.932794 #21812] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T11:57:40.932808 #21812] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-28T11:58:28.072324 #21868]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-28T11:58:28.072548 #21868]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-28T11:58:28.072988 #21868]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.00s).
-I, [2014-10-28T11:58:28.073241 #21868]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-28T11:58:28.073382 #21868]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-E, [2014-10-28T11:58:29.286480 #21868] ERROR -- default-amazon-201409: Create failed on instance <default-amazon-201409>.
-E, [2014-10-28T11:58:29.286596 #21868] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T11:58:29.286618 #21868] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T11:58:29.286633 #21868] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-west-2]
-E, [2014-10-28T11:58:29.286646 #21868] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T11:58:29.286659 #21868] ERROR -- default-amazon-201409: Class: Fog::Compute::AWS::Error
-E, [2014-10-28T11:58:29.286672 #21868] ERROR -- default-amazon-201409: Message: InvalidParameterValue => Invalid availability zone: [us-west-2]
-E, [2014-10-28T11:58:29.286685 #21868] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T11:58:29.286698 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
-E, [2014-10-28T11:58:29.286711 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
-E, [2014-10-28T11:58:29.286724 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T11:58:29.286737 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T11:58:29.286749 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T11:58:29.286762 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T11:58:29.286774 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T11:58:29.286787 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:58:29.286800 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T11:58:29.286812 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T11:58:29.286825 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
-E, [2014-10-28T11:58:29.286837 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T11:58:29.286850 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T11:58:29.286862 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T11:58:29.286874 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-28T11:58:29.286906 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-28T11:58:29.286921 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T11:58:29.286936 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-28T11:58:29.286949 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T11:58:29.286970 #21868] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T11:58:29.286983 #21868] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-28T12:02:07.897033 #21942]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-28T12:02:07.897329 #21942]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-28T12:02:07.897731 #21942]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.00s).
-I, [2014-10-28T12:02:07.897974 #21942]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-28T12:02:07.898101 #21942]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-E, [2014-10-28T12:02:08.453555 #21942] ERROR -- default-amazon-201409: Create failed on instance <default-amazon-201409>.
-E, [2014-10-28T12:02:08.453676 #21942] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T12:02:08.453706 #21942] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T12:02:08.453718 #21942] ERROR -- default-amazon-201409: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
-E, [2014-10-28T12:02:08.453730 #21942] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T12:02:08.453741 #21942] ERROR -- default-amazon-201409: Class: Fog::Compute::AWS::Error
-E, [2014-10-28T12:02:08.453752 #21942] ERROR -- default-amazon-201409: Message: InvalidParameterCombination => Non-Windows instances with a virtualization type of 'hvm' are currently not supported for this instance type.
-E, [2014-10-28T12:02:08.453763 #21942] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T12:02:08.453774 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:80:in `rescue in create'
-E, [2014-10-28T12:02:08.453785 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/kitchen-ec2-0.8.0/lib/kitchen/driver/ec2.rb:69:in `create'
-E, [2014-10-28T12:02:08.453796 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T12:02:08.453807 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T12:02:08.453818 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T12:02:08.453829 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T12:02:08.453840 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T12:02:08.453869 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T12:02:08.453883 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T12:02:08.453895 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T12:02:08.453906 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
-E, [2014-10-28T12:02:08.453916 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T12:02:08.453939 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T12:02:08.453951 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T12:02:08.453964 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-28T12:02:08.453976 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-28T12:02:08.453988 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T12:02:08.454001 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-28T12:02:08.454013 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T12:02:08.454025 #21942] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T12:02:08.454037 #21942] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-28T12:03:32.216747 #22004]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-28T12:03:32.217005 #22004]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-28T12:03:32.217445 #22004]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.00s).
-I, [2014-10-28T12:03:32.218344 #22004]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-28T12:03:32.218601 #22004]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-I, [2014-10-28T12:03:34.205999 #22004]  INFO -- default-amazon-201409: EC2 instance <i-b958a9b5> created.
-I, [2014-10-28T12:03:48.656113 #22004]  INFO -- default-amazon-201409: (server ready)
-I, [2014-10-28T12:05:03.919071 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:06:20.258820 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:07:35.593285 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:08:51.212514 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:10:06.686584 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:11:22.427010 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:12:37.953739 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:13:53.607216 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:15:09.484742 #22004]  INFO -- default-amazon-201409: Waiting for ec2-54-186-247-177.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-28T12:16:17.447947 #22004]  INFO -- default-amazon-201409: (ssh ready)\n
-I, [2014-10-28T12:16:17.448923 #22004]  INFO -- default-amazon-201409: Finished creating <default-amazon-201409> (12m45.23s).
-I, [2014-10-28T12:16:17.449056 #22004]  INFO -- default-amazon-201409: -----> Converging <default-amazon-201409>...
-I, [2014-10-28T12:16:17.450006 #22004]  INFO -- default-amazon-201409: Preparing files for transfer
-I, [2014-10-28T12:16:17.450074 #22004]  INFO -- default-amazon-201409: Preparing modules
-I, [2014-10-28T12:16:17.450210 #22004]  INFO -- default-amazon-201409: nothing to do for modules
-I, [2014-10-28T12:16:17.450365 #22004]  INFO -- default-amazon-201409: Resolving module dependencies with Librarian-Puppet 1.1.2...
-I, [2014-10-28T12:16:18.833430 #22004]  INFO -- default-amazon-201409: Preparing manifests
-I, [2014-10-28T12:16:18.833871 #22004]  INFO -- default-amazon-201409: Preparing files
-I, [2014-10-28T12:16:18.833998 #22004]  INFO -- default-amazon-201409: nothing to do for files
-I, [2014-10-28T12:16:18.834169 #22004]  INFO -- default-amazon-201409: Preparing hiera data
-I, [2014-10-28T12:16:18.834329 #22004]  INFO -- default-amazon-201409: Finished Preparing files for transfer
-I, [2014-10-28T12:16:18.834568 #22004]  INFO -- default-amazon-201409: Installing puppet, will try to determine platform os
-I, [2014-10-28T12:16:19.662626 #22004]  INFO -- default-amazon-201409: which: no puppet in (/usr/local/bin:/bin:/usr/bin:/opt/aws/bin)
-I, [2014-10-28T12:16:19.714433 #22004]  INFO -- default-amazon-201409: --2014-10-28 19:16:19--  http://apt.puppetlabs.com/puppetlabs-release-precise.deb
-Resolving apt.puppetlabs.com (apt.puppetlabs.com)... 192.155.89.90I, [2014-10-28T12:16:19.733733 #22004]  INFO -- default-amazon-201409: 
-Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|192.155.89.90|:80... I, [2014-10-28T12:16:19.813328 #22004]  INFO -- default-amazon-201409: connected.
-HTTP request sent, awaiting response... I, [2014-10-28T12:16:19.891806 #22004]  INFO -- default-amazon-201409: 200 OK
-I, [2014-10-28T12:16:19.891875 #22004]  INFO -- default-amazon-201409: Length: 7382 (7.2K) [application/x-debian-package]
-I, [2014-10-28T12:16:19.891932 #22004]  INFO -- default-amazon-201409: Saving to: ‘puppetlabs-release-precise.deb’
-I, [2014-10-28T12:16:19.891951 #22004]  INFO -- default-amazon-201409: 
-I, [2014-10-28T12:16:19.891968 #22004]  INFO -- default-amazon-201409:  0% [                                       ] 0           --.-K/s              100%[======================================>] 7,382       --.-K/s   in 0s      
-I, [2014-10-28T12:16:19.891983 #22004]  INFO -- default-amazon-201409: 
-I, [2014-10-28T12:16:19.891998 #22004]  INFO -- default-amazon-201409: 2014-10-28 19:16:19 (882 MB/s) - ‘puppetlabs-release-precise.deb’ saved [7382/7382]
-I, [2014-10-28T12:16:19.892012 #22004]  INFO -- default-amazon-201409: 
-sudo: dpkg: command not foundI, [2014-10-28T12:16:19.895247 #22004]  INFO -- default-amazon-201409: 
-sudo: apt-get: command not foundI, [2014-10-28T12:16:19.898171 #22004]  INFO -- default-amazon-201409: 
-sudo: apt-get: command not foundI, [2014-10-28T12:16:19.929003 #22004]  INFO -- default-amazon-201409: 
-I, [2014-10-28T12:16:19.929337 #22004]  INFO -- default-amazon-201409: -----> Installing Chef Omnibus to install busser to run tests
-I, [2014-10-28T12:16:19.929408 #22004]  INFO -- default-amazon-201409: downloading https://www.getchef.com/chef/install.sh
-I, [2014-10-28T12:16:19.929453 #22004]  INFO -- default-amazon-201409:   to file /tmp/install.sh
-I, [2014-10-28T12:16:19.929495 #22004]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-28T12:16:20.443644 #22004]  INFO -- default-amazon-201409: Downloading Chef  for el...
-I, [2014-10-28T12:16:20.445048 #22004]  INFO -- default-amazon-201409: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
-I, [2014-10-28T12:16:20.445128 #22004]  INFO -- default-amazon-201409:   to file /tmp/install.sh.2313/metadata.txt
-I, [2014-10-28T12:16:20.445155 #22004]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-28T12:16:20.715733 #22004]  INFO -- default-amazon-201409: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-28T12:16:20.715816 #22004]  INFO -- default-amazon-201409: md5	2355a7a93bc4cc353bee6de9e3bcb7ba
-I, [2014-10-28T12:16:20.715849 #22004]  INFO -- default-amazon-201409: sha256	278599ff185b680703e7a779db8674eeba843e9fe42a0ae06e01a9dfa9ac4d0e
-I, [2014-10-28T12:16:20.717943 #22004]  INFO -- default-amazon-201409: downloaded metadata file looks valid...
-I, [2014-10-28T12:16:20.726554 #22004]  INFO -- default-amazon-201409: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-28T12:16:20.726725 #22004]  INFO -- default-amazon-201409:   to file /tmp/install.sh.2313/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-28T12:16:20.726771 #22004]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-28T12:16:23.936828 #22004]  INFO -- default-amazon-201409: Comparing checksum with sha256sum...
-I, [2014-10-28T12:16:24.122071 #22004]  INFO -- default-amazon-201409: Installing Chef 
-I, [2014-10-28T12:16:24.122130 #22004]  INFO -- default-amazon-201409: installing with rpm...
-warning: I, [2014-10-28T12:16:24.132944 #22004]  INFO -- default-amazon-201409: /tmp/install.sh.2313/chef-11.16.4-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)I, [2014-10-28T12:16:24.378895 #22004]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-28T12:16:24.388780 #22004]  INFO -- default-amazon-201409: Updating / installing...
-   1:chef-11.16.4-1.el6                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)I, [2014-10-28T12:16:27.048732 #22004]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-28T12:16:29.407906 #22004]  INFO -- default-amazon-201409: Thank you for installing Chef!
-I, [2014-10-28T12:16:29.621139 #22004]  INFO -- default-amazon-201409: Transfering files to <default-amazon-201409>
-sudo: puppet: command not foundI, [2014-10-28T12:23:13.284361 #22004]  INFO -- default-amazon-201409: 
-E, [2014-10-28T12:23:13.499213 #22004] ERROR -- default-amazon-201409: Converge failed on instance <default-amazon-201409>.
-E, [2014-10-28T12:23:13.499375 #22004] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T12:23:13.499399 #22004] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T12:23:13.499414 #22004] ERROR -- default-amazon-201409: Message: SSH exited (1) for command: [ sudo -E puppet apply /tmp/kitchen/manifests/site.pp --modulepath=/tmp/kitchen/modules --manifestdir=/tmp/kitchen/manifests --fileserverconfig=/tmp/kitchen/fileserver.conf   ]
-E, [2014-10-28T12:23:13.499428 #22004] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T12:23:13.499440 #22004] ERROR -- default-amazon-201409: Class: Kitchen::SSHFailed
-E, [2014-10-28T12:23:13.499452 #22004] ERROR -- default-amazon-201409: Message: SSH exited (1) for command: [ sudo -E puppet apply /tmp/kitchen/manifests/site.pp --modulepath=/tmp/kitchen/modules --manifestdir=/tmp/kitchen/manifests --fileserverconfig=/tmp/kitchen/fileserver.conf   ]
-E, [2014-10-28T12:23:13.499467 #22004] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T12:23:13.499480 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
-E, [2014-10-28T12:23:13.499492 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
-E, [2014-10-28T12:23:13.499504 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
-E, [2014-10-28T12:23:13.499517 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
-E, [2014-10-28T12:23:13.499529 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
-E, [2014-10-28T12:23:13.499541 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
-E, [2014-10-28T12:23:13.499553 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T12:23:13.499565 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T12:23:13.499579 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T12:23:13.499592 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T12:23:13.499604 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T12:23:13.499616 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T12:23:13.499629 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T12:23:13.499641 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T12:23:13.499653 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
-E, [2014-10-28T12:23:13.499666 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T12:23:13.499685 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T12:23:13.499702 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T12:23:13.499715 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-28T12:23:13.499727 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-28T12:23:13.499739 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T12:23:13.499751 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-28T12:23:13.499763 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T12:23:13.499775 #22004] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T12:23:13.499788 #22004] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-28T12:41:56.178965 #23468]  INFO -- default-amazon-201409: -----> Converging <default-amazon-201409>...
-I, [2014-10-28T12:41:56.179763 #23468]  INFO -- default-amazon-201409: Preparing files for transfer
-I, [2014-10-28T12:41:56.179827 #23468]  INFO -- default-amazon-201409: Preparing modules
-I, [2014-10-28T12:41:56.179940 #23468]  INFO -- default-amazon-201409: nothing to do for modules
-I, [2014-10-28T12:41:56.180075 #23468]  INFO -- default-amazon-201409: Resolving module dependencies with Librarian-Puppet 1.1.2...
-I, [2014-10-28T12:41:57.735212 #23468]  INFO -- default-amazon-201409: Preparing manifests
-I, [2014-10-28T12:41:57.735618 #23468]  INFO -- default-amazon-201409: Preparing files
-I, [2014-10-28T12:41:57.735725 #23468]  INFO -- default-amazon-201409: nothing to do for files
-I, [2014-10-28T12:41:57.735900 #23468]  INFO -- default-amazon-201409: Preparing hiera data
-I, [2014-10-28T12:41:57.736042 #23468]  INFO -- default-amazon-201409: Finished Preparing files for transfer
-I, [2014-10-28T12:41:57.736248 #23468]  INFO -- default-amazon-201409: Installing puppet, will try to determine platform os
-I, [2014-10-28T12:41:58.728071 #23468]  INFO -- default-amazon-201409: which: no puppet in (/usr/local/bin:/bin:/usr/bin:/opt/aws/bin)
-I, [2014-10-28T12:41:58.732983 #23468]  INFO -- default-amazon-201409: --2014-10-28 19:41:58--  http://apt.puppetlabs.com/puppetlabs-release-precise.deb
-Resolving apt.puppetlabs.com (apt.puppetlabs.com)... 192.155.89.90I, [2014-10-28T12:41:58.753253 #23468]  INFO -- default-amazon-201409: 
-Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|192.155.89.90|:80... I, [2014-10-28T12:41:58.830898 #23468]  INFO -- default-amazon-201409: connected.
-HTTP request sent, awaiting response... I, [2014-10-28T12:42:00.097782 #23468]  INFO -- default-amazon-201409: 200 OK
-Length: 7382 (7.2K)I, [2014-10-28T12:42:00.098578 #23468]  INFO -- default-amazon-201409:  [application/x-debian-package]
-I, [2014-10-28T12:42:00.098776 #23468]  INFO -- default-amazon-201409: Saving to: ‘puppetlabs-release-precise.deb.1’
-I, [2014-10-28T12:42:00.098917 #23468]  INFO -- default-amazon-201409: 
- 0% [                                       ] 0           --.-K/s              100%[======================================>] 7,382       --.-K/s   in 0s      I, [2014-10-28T12:42:00.131679 #23468]  INFO -- default-amazon-201409: 
-I, [2014-10-28T12:42:00.131747 #23468]  INFO -- default-amazon-201409: 
-I, [2014-10-28T12:42:00.132020 #23468]  INFO -- default-amazon-201409: 2014-10-28 19:42:00 (764 MB/s) - ‘puppetlabs-release-precise.deb.1’ saved [7382/7382]
-I, [2014-10-28T12:42:00.132049 #23468]  INFO -- default-amazon-201409: 
-sudo: dpkg: command not foundI, [2014-10-28T12:42:00.132472 #23468]  INFO -- default-amazon-201409: 
-sudo: apt-get: command not foundI, [2014-10-28T12:42:00.132876 #23468]  INFO -- default-amazon-201409: 
-sudo: apt-get: command not foundI, [2014-10-28T12:42:00.133247 #23468]  INFO -- default-amazon-201409: 
-I, [2014-10-28T12:42:00.261242 #23468]  INFO -- default-amazon-201409: Transfering files to <default-amazon-201409>
-sudo: puppet: command not foundI, [2014-10-28T12:48:32.702522 #23468]  INFO -- default-amazon-201409: 
-E, [2014-10-28T12:48:32.981799 #23468] ERROR -- default-amazon-201409: Converge failed on instance <default-amazon-201409>.
-E, [2014-10-28T12:48:32.981931 #23468] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-28T12:48:32.981954 #23468] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-28T12:48:32.981971 #23468] ERROR -- default-amazon-201409: Message: SSH exited (1) for command: [ sudo -E puppet apply /tmp/kitchen/manifests/site.pp --modulepath=/tmp/kitchen/modules --manifestdir=/tmp/kitchen/manifests --fileserverconfig=/tmp/kitchen/fileserver.conf   ]
-E, [2014-10-28T12:48:32.981985 #23468] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-28T12:48:32.981999 #23468] ERROR -- default-amazon-201409: Class: Kitchen::SSHFailed
-E, [2014-10-28T12:48:32.982013 #23468] ERROR -- default-amazon-201409: Message: SSH exited (1) for command: [ sudo -E puppet apply /tmp/kitchen/manifests/site.pp --modulepath=/tmp/kitchen/modules --manifestdir=/tmp/kitchen/manifests --fileserverconfig=/tmp/kitchen/fileserver.conf   ]
-E, [2014-10-28T12:48:32.982027 #23468] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-28T12:48:32.982040 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
-E, [2014-10-28T12:48:32.982054 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
-E, [2014-10-28T12:48:32.982068 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
-E, [2014-10-28T12:48:32.982082 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
-E, [2014-10-28T12:48:32.982095 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
-E, [2014-10-28T12:48:32.982109 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
-E, [2014-10-28T12:48:32.982122 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-28T12:48:32.982135 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-28T12:48:32.982149 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-28T12:48:32.982163 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-28T12:48:32.982177 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-28T12:48:32.982527 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-28T12:48:32.982573 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-28T12:48:32.982605 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-28T12:48:32.982634 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
-E, [2014-10-28T12:48:32.982662 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-28T12:48:32.982689 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-28T12:48:32.982715 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-28T12:48:32.982742 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:119:in `converge'
-E, [2014-10-28T12:48:32.982768 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-28T12:48:32.982795 #23468] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-28T12:48:32.982821 #23468] ERROR -- default-amazon-201409: ----------------------
-I, [2014-10-29T15:00:51.543591 #30978]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-29T15:00:51.544841 #30978]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-29T15:00:52.669049 #30978]  INFO -- default-amazon-201409: EC2 instance <i-b958a9b5> destroyed.
-I, [2014-10-29T15:00:52.670385 #30978]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m1.12s).
-I, [2014-10-29T15:00:52.670997 #30978]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-29T15:00:52.671160 #30978]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-I, [2014-10-29T15:00:54.325008 #30978]  INFO -- default-amazon-201409: EC2 instance <i-13cc3f1f> created.
-I, [2014-10-29T15:01:12.758441 #30978]  INFO -- default-amazon-201409: (server ready)
-I, [2014-10-29T15:01:50.675600 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:01:52.708724 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:01:54.743116 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:01:56.779205 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:01:58.812690 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:02:00.862136 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:02:02.895421 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:02:04.929655 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:02:06.963931 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:02:08.997355 #30978]  INFO -- default-amazon-201409: Waiting for ec2-54-68-77-153.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:02:09.068713 #30978]  INFO -- default-amazon-201409: (ssh ready)\n
-I, [2014-10-29T15:02:09.069686 #30978]  INFO -- default-amazon-201409: Finished creating <default-amazon-201409> (1m16.40s).
-I, [2014-10-29T15:02:09.069845 #30978]  INFO -- default-amazon-201409: -----> Converging <default-amazon-201409>...
-I, [2014-10-29T15:02:09.070646 #30978]  INFO -- default-amazon-201409: Preparing files for transfer
-I, [2014-10-29T15:02:09.070751 #30978]  INFO -- default-amazon-201409: Preparing modules
-I, [2014-10-29T15:02:09.070990 #30978]  INFO -- default-amazon-201409: nothing to do for modules
-I, [2014-10-29T15:02:09.071167 #30978]  INFO -- default-amazon-201409: Resolving module dependencies with Librarian-Puppet 1.1.2...
-I, [2014-10-29T15:02:10.571565 #30978]  INFO -- default-amazon-201409: Preparing manifests
-I, [2014-10-29T15:02:10.572193 #30978]  INFO -- default-amazon-201409: Preparing files
-I, [2014-10-29T15:02:10.572361 #30978]  INFO -- default-amazon-201409: nothing to do for files
-I, [2014-10-29T15:02:10.572574 #30978]  INFO -- default-amazon-201409: Preparing hiera data
-I, [2014-10-29T15:02:10.572757 #30978]  INFO -- default-amazon-201409: Finished Preparing files for transfer
-I, [2014-10-29T15:02:10.573004 #30978]  INFO -- default-amazon-201409: Installing puppet, will try to determine platform os
-I, [2014-10-29T15:02:11.711504 #30978]  INFO -- default-amazon-201409: which: no puppet in (/usr/local/bin:/bin:/usr/bin:/opt/aws/bin)
-I, [2014-10-29T15:02:11.711876 #30978]  INFO -- default-amazon-201409: --2014-10-29 22:02:11--  http://apt.puppetlabs.com/puppetlabs-release-precise.deb
-Resolving apt.puppetlabs.com (apt.puppetlabs.com)... I, [2014-10-29T15:02:11.712199 #30978]  INFO -- default-amazon-201409: 198.58.114.168, 2600:3c00::f03c:91ff:fe69:6bf0
-I, [2014-10-29T15:02:11.712247 #30978]  INFO -- default-amazon-201409: Connecting to apt.puppetlabs.com (apt.puppetlabs.com)|198.58.114.168|:80... 
-I, [2014-10-29T15:02:11.712481 #30978]  INFO -- default-amazon-201409: connected.
-I, [2014-10-29T15:02:11.712529 #30978]  INFO -- default-amazon-201409: HTTP request sent, awaiting response... 
-I, [2014-10-29T15:02:11.751709 #30978]  INFO -- default-amazon-201409: 200 OK
-I, [2014-10-29T15:02:11.751787 #30978]  INFO -- default-amazon-201409: Length: 7382 (7.2K) [application/x-debian-package]
-I, [2014-10-29T15:02:11.751817 #30978]  INFO -- default-amazon-201409: Saving to: ‘puppetlabs-release-precise.deb’
-I, [2014-10-29T15:02:11.751843 #30978]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:02:11.751872 #30978]  INFO -- default-amazon-201409:  0% [                                       ] 0           --.-K/s              100%[======================================>] 7,382       --.-K/s   in 0s      
-I, [2014-10-29T15:02:11.751895 #30978]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:02:11.751917 #30978]  INFO -- default-amazon-201409: 2014-10-29 22:02:11 (841 MB/s) - ‘puppetlabs-release-precise.deb’ saved [7382/7382]
-I, [2014-10-29T15:02:11.751939 #30978]  INFO -- default-amazon-201409: 
-sudo: dpkg: command not foundI, [2014-10-29T15:02:11.759116 #30978]  INFO -- default-amazon-201409: 
-sudo: apt-get: command not foundI, [2014-10-29T15:02:11.781258 #30978]  INFO -- default-amazon-201409: 
-sudo: apt-get: command not foundI, [2014-10-29T15:02:11.781687 #30978]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:02:11.781858 #30978]  INFO -- default-amazon-201409: -----> Installing Chef Omnibus to install busser to run tests
-I, [2014-10-29T15:02:11.781898 #30978]  INFO -- default-amazon-201409: downloading https://www.getchef.com/chef/install.sh
-I, [2014-10-29T15:02:11.781928 #30978]  INFO -- default-amazon-201409:   to file /tmp/install.sh
-I, [2014-10-29T15:02:11.781955 #30978]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-29T15:02:15.404371 #30978]  INFO -- default-amazon-201409: Downloading Chef  for el...
-I, [2014-10-29T15:02:15.408157 #30978]  INFO -- default-amazon-201409: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
-I, [2014-10-29T15:02:15.408242 #30978]  INFO -- default-amazon-201409:   to file /tmp/install.sh.2235/metadata.txt
-I, [2014-10-29T15:02:15.408273 #30978]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-29T15:02:15.812089 #30978]  INFO -- default-amazon-201409: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-29T15:02:15.812173 #30978]  INFO -- default-amazon-201409: md5	2355a7a93bc4cc353bee6de9e3bcb7ba
-I, [2014-10-29T15:02:15.812204 #30978]  INFO -- default-amazon-201409: sha256	278599ff185b680703e7a779db8674eeba843e9fe42a0ae06e01a9dfa9ac4d0e
-I, [2014-10-29T15:02:15.812421 #30978]  INFO -- default-amazon-201409: downloaded metadata file looks valid...
-I, [2014-10-29T15:02:15.812580 #30978]  INFO -- default-amazon-201409: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-29T15:02:15.812620 #30978]  INFO -- default-amazon-201409:   to file /tmp/install.sh.2235/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-29T15:02:15.812651 #30978]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-29T15:02:20.112892 #30978]  INFO -- default-amazon-201409: Comparing checksum with sha256sum...
-I, [2014-10-29T15:02:20.222250 #30978]  INFO -- default-amazon-201409: Installing Chef 
-I, [2014-10-29T15:02:20.222334 #30978]  INFO -- default-amazon-201409: installing with rpm...
-warning: I, [2014-10-29T15:02:20.232766 #30978]  INFO -- default-amazon-201409: /tmp/install.sh.2235/chef-11.16.4-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)I, [2014-10-29T15:02:20.340488 #30978]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-29T15:02:20.349937 #30978]  INFO -- default-amazon-201409: Updating / installing...
-   1:chef-11.16.4-1.el6                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)I, [2014-10-29T15:02:23.638159 #30978]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-29T15:02:26.329679 #30978]  INFO -- default-amazon-201409: Thank you for installing Chef!
-I, [2014-10-29T15:02:26.412164 #30978]  INFO -- default-amazon-201409: Transfering files to <default-amazon-201409>
-I, [2014-10-29T15:05:39.871169 #31104]  INFO -- default-amazon-201409: -----> Cleaning up any prior instances of <default-amazon-201409>
-I, [2014-10-29T15:05:39.871545 #31104]  INFO -- default-amazon-201409: -----> Destroying <default-amazon-201409>...
-I, [2014-10-29T15:05:40.740445 #31104]  INFO -- default-amazon-201409: EC2 instance <i-13cc3f1f> destroyed.
-I, [2014-10-29T15:05:40.741080 #31104]  INFO -- default-amazon-201409: Finished destroying <default-amazon-201409> (0m0.87s).
-I, [2014-10-29T15:05:40.742022 #31104]  INFO -- default-amazon-201409: -----> Testing <default-amazon-201409>
-I, [2014-10-29T15:05:40.742199 #31104]  INFO -- default-amazon-201409: -----> Creating <default-amazon-201409>...
-I, [2014-10-29T15:05:42.784568 #31104]  INFO -- default-amazon-201409: EC2 instance <i-b231c2be> created.
-I, [2014-10-29T15:05:56.027667 #31104]  INFO -- default-amazon-201409: (server ready)
-I, [2014-10-29T15:06:33.608868 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:35.643908 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:37.679679 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:39.715801 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:41.755313 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:43.791807 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:45.829993 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:47.944779 #31104]  INFO -- default-amazon-201409: Waiting for ec2-54-68-190-236.us-west-2.compute.amazonaws.com:22...
-I, [2014-10-29T15:06:48.027712 #31104]  INFO -- default-amazon-201409: (ssh ready)\n
-I, [2014-10-29T15:06:48.028555 #31104]  INFO -- default-amazon-201409: Finished creating <default-amazon-201409> (1m7.29s).
-I, [2014-10-29T15:06:48.028643 #31104]  INFO -- default-amazon-201409: -----> Converging <default-amazon-201409>...
-I, [2014-10-29T15:06:48.029791 #31104]  INFO -- default-amazon-201409: Preparing files for transfer
-I, [2014-10-29T15:06:48.029898 #31104]  INFO -- default-amazon-201409: Preparing modules
-I, [2014-10-29T15:06:48.030062 #31104]  INFO -- default-amazon-201409: nothing to do for modules
-I, [2014-10-29T15:06:48.030342 #31104]  INFO -- default-amazon-201409: Resolving module dependencies with Librarian-Puppet 1.1.2...
-I, [2014-10-29T15:06:48.757711 #31104]  INFO -- default-amazon-201409: Preparing manifests
-I, [2014-10-29T15:06:48.758161 #31104]  INFO -- default-amazon-201409: Preparing files
-I, [2014-10-29T15:06:48.758294 #31104]  INFO -- default-amazon-201409: nothing to do for files
-I, [2014-10-29T15:06:48.758472 #31104]  INFO -- default-amazon-201409: Preparing hiera data
-I, [2014-10-29T15:06:48.758633 #31104]  INFO -- default-amazon-201409: Finished Preparing files for transfer
-I, [2014-10-29T15:06:48.758839 #31104]  INFO -- default-amazon-201409: Installing puppet on centos
-I, [2014-10-29T15:06:49.564929 #31104]  INFO -- default-amazon-201409: which: no puppet in (/usr/local/bin:/bin:/usr/bin:/opt/aws/bin)
-I, [2014-10-29T15:06:49.579299 #31104]  INFO -- default-amazon-201409: Retrieving https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
-I, [2014-10-29T15:06:50.245527 #31104]  INFO -- default-amazon-201409: warning: /var/tmp/rpm-tmp.ZvvE9N: Header V4 RSA/SHA1 Signature, key ID 4bd6ec30: NOKEY
-Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)I, [2014-10-29T15:06:50.246478 #31104]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-29T15:06:50.246608 #31104]  INFO -- default-amazon-201409: Updating / installing...
-   1:puppetlabs-release-6-11                                            ( 63%)#                                 ( 63%)##                                ( 63%)###                               ( 63%)####                              ( 63%)#####                             ( 63%)######                            ( 63%)#######                           ( 63%)########                          ( 63%)#########                         ( 63%)##########                        ( 63%)###########                       ( 63%)############                      ( 63%)#############                     ( 63%)##############                    ( 63%)###############                   ( 63%)################                  ( 63%)#################                 ( 63%)##################                ( 63%)###################               ( 63%)####################              ( 63%)#####################             ( 83%)######################            ( 83%)#######################           ( 83%)########################          ( 83%)#########################         ( 83%)##########################        ( 83%)###########################       ( 83%)############################      ( 99%)#############################     ( 99%)##############################    ( 99%)###############################   ( 99%)################################  ( 99%)################################# ( 99%)I, [2014-10-29T15:06:50.280857 #31104]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-29T15:06:50.344096 #31104]  INFO -- default-amazon-201409: Loaded plugins: priorities, update-motd, upgrade-helper
-I, [2014-10-29T15:06:50.393060 #31104]  INFO -- default-amazon-201409: amzn-main/latest                                         | 2.1 kB     00:00     
-I, [2014-10-29T15:06:50.403625 #31104]  INFO -- default-amazon-201409: amzn-updates/latest                                      | 2.3 kB     00:00     
-I, [2014-10-29T15:06:50.718101 #31104]  INFO -- default-amazon-201409: puppetlabs-deps/x86_64                                   | 2.5 kB     00:00     
-puppetlabs-deps/x86_64/fi 56% [========       ]  0.0 B/s | 111 kB     --:-- ETA I, [2014-10-29T15:06:51.270054 #31104]  INFO -- default-amazon-201409: puppetlabs-deps/x86_64/filelists_db                      | 198 kB     00:00     
-I, [2014-10-29T15:06:51.387033 #31104]  INFO -- default-amazon-201409: puppetlabs-deps/x86_64/primary_db                        |  25 kB     00:00     
-I, [2014-10-29T15:06:51.517213 #31104]  INFO -- default-amazon-201409: puppetlabs-deps/x86_64/other_db                          |  19 kB     00:00     
-I, [2014-10-29T15:06:51.718407 #31104]  INFO -- default-amazon-201409: puppetlabs-products/x86_64                               | 2.5 kB     00:00     
-puppetlabs-products/x86_6 79% [===========-   ]  0.0 B/s | 768 kB     --:-- ETA I, [2014-10-29T15:06:52.289327 #31104]  INFO -- default-amazon-201409: puppetlabs-products/x86_64/filelists_db                  | 969 kB     00:00     
-I, [2014-10-29T15:06:52.413232 #31104]  INFO -- default-amazon-201409: puppetlabs-products/x86_64/primary_db                    | 124 kB     00:00     
-I, [2014-10-29T15:06:52.543212 #31104]  INFO -- default-amazon-201409: puppetlabs-products/x86_64/other_db                      | 171 kB     00:00     
-I, [2014-10-29T15:06:52.908137 #31104]  INFO -- default-amazon-201409: Metadata Cache Created
-I, [2014-10-29T15:06:52.999706 #31104]  INFO -- default-amazon-201409: Loaded plugins: priorities, update-motd, upgrade-helper
-I, [2014-10-29T15:06:53.256941 #31104]  INFO -- default-amazon-201409: 167 packages excluded due to repository priority protections
-I, [2014-10-29T15:06:53.367786 #31104]  INFO -- default-amazon-201409: Resolving Dependencies
-I, [2014-10-29T15:06:53.368387 #31104]  INFO -- default-amazon-201409: --> Running transaction check
-I, [2014-10-29T15:06:53.368578 #31104]  INFO -- default-amazon-201409: ---> Package puppet.x86_64 0:2.7.25-1.2.amzn1 will be installed
-I, [2014-10-29T15:06:53.380137 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: facter >= 1.5 for package: puppet-2.7.25-1.2.amzn1.x86_64
-I, [2014-10-29T15:06:53.540014 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: ruby(augeas) for package: puppet-2.7.25-1.2.amzn1.x86_64
-I, [2014-10-29T15:06:53.540803 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: /usr/bin/ruby1.8 for package: puppet-2.7.25-1.2.amzn1.x86_64
-I, [2014-10-29T15:06:53.541983 #31104]  INFO -- default-amazon-201409: --> Running transaction check
-I, [2014-10-29T15:06:53.542496 #31104]  INFO -- default-amazon-201409: ---> Package facter.noarch 0:1.6.18-3.21.amzn1 will be installed
-I, [2014-10-29T15:06:53.545094 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: ruby(abi) = 1.8 for package: facter-1.6.18-3.21.amzn1.noarch
-I, [2014-10-29T15:06:53.549664 #31104]  INFO -- default-amazon-201409: ---> Package ruby-augeas.x86_64 0:0.4.1-1.6.amzn1 will be installed
-I, [2014-10-29T15:06:53.557763 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: augeas-libs >= 0.8.0 for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.560757 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: libaugeas.so.0(AUGEAS_0.8.0)(64bit) for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.561213 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: libaugeas.so.0(AUGEAS_0.11.0)(64bit) for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.561428 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: libaugeas.so.0(AUGEAS_0.10.0)(64bit) for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.572394 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: libaugeas.so.0(AUGEAS_0.1.0)(64bit) for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.572694 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: libaugeas.so.0(AUGEAS_0.12.0)(64bit) for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.572922 #31104]  INFO -- default-amazon-201409: --> Processing Dependency: libaugeas.so.0()(64bit) for package: ruby-augeas-0.4.1-1.6.amzn1.x86_64
-I, [2014-10-29T15:06:53.573087 #31104]  INFO -- default-amazon-201409: ---> Package ruby18.x86_64 0:1.8.7.374-2.42.3.amzn1 will be installed
-I, [2014-10-29T15:06:53.573260 #31104]  INFO -- default-amazon-201409: --> Running transaction check
-I, [2014-10-29T15:06:53.573420 #31104]  INFO -- default-amazon-201409: ---> Package augeas-libs.x86_64 0:1.0.0-5.7.amzn1 will be installed
-I, [2014-10-29T15:06:53.573579 #31104]  INFO -- default-amazon-201409: ---> Package ruby18-libs.x86_64 0:1.8.7.374-2.42.3.amzn1 will be installed
-I, [2014-10-29T15:06:53.732178 #31104]  INFO -- default-amazon-201409: --> Finished Dependency Resolution
-I, [2014-10-29T15:06:53.756399 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:53.756482 #31104]  INFO -- default-amazon-201409: Dependencies Resolved
-I, [2014-10-29T15:06:53.758826 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:53.758924 #31104]  INFO -- default-amazon-201409: ================================================================================
-I, [2014-10-29T15:06:53.759023 #31104]  INFO -- default-amazon-201409:  Package          Arch        Version                      Repository      Size
-I, [2014-10-29T15:06:53.759054 #31104]  INFO -- default-amazon-201409: ================================================================================
-I, [2014-10-29T15:06:53.759080 #31104]  INFO -- default-amazon-201409: Installing:
-I, [2014-10-29T15:06:53.759106 #31104]  INFO -- default-amazon-201409:  puppet           x86_64      2.7.25-1.2.amzn1             amzn-main      1.1 M
-I, [2014-10-29T15:06:53.759131 #31104]  INFO -- default-amazon-201409: Installing for dependencies:
-I, [2014-10-29T15:06:53.759156 #31104]  INFO -- default-amazon-201409:  augeas-libs      x86_64      1.0.0-5.7.amzn1              amzn-main      345 k
-I, [2014-10-29T15:06:53.759181 #31104]  INFO -- default-amazon-201409:  facter           noarch      1.6.18-3.21.amzn1            amzn-main       62 k
-I, [2014-10-29T15:06:53.759206 #31104]  INFO -- default-amazon-201409:  ruby-augeas      x86_64      0.4.1-1.6.amzn1              amzn-main       22 k
-I, [2014-10-29T15:06:53.759231 #31104]  INFO -- default-amazon-201409:  ruby18           x86_64      1.8.7.374-2.42.3.amzn1       amzn-main      385 k
-I, [2014-10-29T15:06:53.759306 #31104]  INFO -- default-amazon-201409:  ruby18-libs      x86_64      1.8.7.374-2.42.3.amzn1       amzn-main      2.1 M
-I, [2014-10-29T15:06:53.759343 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:53.759368 #31104]  INFO -- default-amazon-201409: Transaction Summary
-I, [2014-10-29T15:06:53.759392 #31104]  INFO -- default-amazon-201409: ================================================================================
-I, [2014-10-29T15:06:53.759415 #31104]  INFO -- default-amazon-201409: Install  1 Package (+5 Dependent packages)
-I, [2014-10-29T15:06:53.759439 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:53.760004 #31104]  INFO -- default-amazon-201409: Total download size: 4.0 M
-I, [2014-10-29T15:06:53.760235 #31104]  INFO -- default-amazon-201409: Installed size: 12 M
-I, [2014-10-29T15:06:53.760483 #31104]  INFO -- default-amazon-201409: Downloading packages:
-I, [2014-10-29T15:06:53.795217 #31104]  INFO -- default-amazon-201409: (1/6): augeas-libs-1.0.0-5.7.amzn1.x86_64.rpm            | 345 kB     00:00     
-I, [2014-10-29T15:06:53.809794 #31104]  INFO -- default-amazon-201409: (2/6): facter-1.6.18-3.21.amzn1.noarch.rpm               |  62 kB     00:00     
-I, [2014-10-29T15:06:53.884546 #31104]  INFO -- default-amazon-201409: (3/6): puppet-2.7.25-1.2.amzn1.x86_64.rpm                | 1.1 MB     00:00     
-I, [2014-10-29T15:06:53.893684 #31104]  INFO -- default-amazon-201409: (4/6): ruby-augeas-0.4.1-1.6.amzn1.x86_64.rpm            |  22 kB     00:00     
-I, [2014-10-29T15:06:53.910641 #31104]  INFO -- default-amazon-201409: (5/6): ruby18-1.8.7.374-2.42.3.amzn1.x86_64.rpm          | 385 kB     00:00     
-I, [2014-10-29T15:06:53.946751 #31104]  INFO -- default-amazon-201409: (6/6): ruby18-libs-1.8.7.374-2.42.3.amzn1.x86_64.rpm     | 2.1 MB     00:00     
-I, [2014-10-29T15:06:53.946993 #31104]  INFO -- default-amazon-201409: --------------------------------------------------------------------------------
-I, [2014-10-29T15:06:53.947229 #31104]  INFO -- default-amazon-201409: Total                                               21 MB/s | 4.0 MB  00:00     
-I, [2014-10-29T15:06:53.955255 #31104]  INFO -- default-amazon-201409: Running transaction check
-I, [2014-10-29T15:06:53.969542 #31104]  INFO -- default-amazon-201409: Running transaction test
-I, [2014-10-29T15:06:54.341709 #31104]  INFO -- default-amazon-201409: Transaction test succeeded
-I, [2014-10-29T15:06:54.341948 #31104]  INFO -- default-amazon-201409: Running transaction
-I, [2014-10-29T15:06:54.342110 #31104]  INFO -- default-amazon-201409: Warning: RPMDB altered outside of yum.
-  Installing : ruby18-libs-1.8.7.374-2.42.3 [                             ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#                            ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [##                           ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [###                          ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [####                         ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#####                        ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [######                       ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#######                      ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [########                     ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#########                    ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [##########                   ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [###########                  ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [############                 ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#############                ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [##############               ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [###############              ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [################             ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#################            ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [##################           ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [###################          ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [####################         ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#####################        ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [######################       ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#######################      ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [########################     ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [#########################    ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [##########################   ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [###########################  ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3 [############################ ] 1/6  Installing : ruby18-libs-1.8.7.374-2.42.3.amzn1.x86_64                    1/6I, [2014-10-29T15:06:55.296337 #31104]  INFO -- default-amazon-201409:  
-  Installing : ruby18-1.8.7.374-2.42.3.amzn [                             ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [#                            ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [###                          ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [#####                        ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [######                       ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [########                     ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [##########                   ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [###########                  ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [#############                ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [##############               ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [################             ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [##################           ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [###################          ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [#####################        ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [######################       ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [#######################      ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [########################     ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [#########################    ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [##########################   ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [###########################  ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn [############################ ] 2/6  Installing : ruby18-1.8.7.374-2.42.3.amzn1.x86_64                         2/6I, [2014-10-29T15:06:55.474826 #31104]  INFO -- default-amazon-201409:  
-  Installing : facter-1.6.18-3.21.amzn1.noa [                             ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#                            ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [##                           ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [###                          ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [####                         ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#####                        ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [######                       ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#######                      ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [########                     ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#########                    ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [##########                   ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [###########                  ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [############                 ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#############                ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [##############               ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [###############              ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#################            ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [##################           ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [###################          ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [####################         ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#####################        ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [######################       ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#######################      ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [#########################    ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [##########################   ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noa [############################ ] 3/6  Installing : facter-1.6.18-3.21.amzn1.noarch                              3/6I, [2014-10-29T15:06:55.580517 #31104]  INFO -- default-amazon-201409:  
-  Installing : augeas-libs-1.0.0-5.7.amzn1. [                             ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#                            ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [###                          ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#####                        ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#######                      ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [########                     ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [###########                  ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [############                 ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#############                ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [##############               ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [###############              ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [################             ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#################            ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [##################           ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [###################          ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [####################         ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#####################        ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [######################       ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#######################      ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [########################     ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [#########################    ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [##########################   ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [###########################  ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1. [############################ ] 4/6  Installing : augeas-libs-1.0.0-5.7.amzn1.x86_64                           4/6I, [2014-10-29T15:06:55.833127 #31104]  INFO -- default-amazon-201409:  
-  Installing : ruby-augeas-0.4.1-1.6.amzn1. [                             ] 5/6  Installing : ruby-augeas-0.4.1-1.6.amzn1. [##                           ] 5/6  Installing : ruby-augeas-0.4.1-1.6.amzn1. [###########                  ] 5/6  Installing : ruby-augeas-0.4.1-1.6.amzn1. [###########################  ] 5/6  Installing : ruby-augeas-0.4.1-1.6.amzn1. [############################ ] 5/6  Installing : ruby-augeas-0.4.1-1.6.amzn1.x86_64                           5/6I, [2014-10-29T15:06:55.898391 #31104]  INFO -- default-amazon-201409:  
-  Installing : puppet-2.7.25-1.2.amzn1.x86_ [                             ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#                            ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [##                           ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [###                          ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [####                         ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#####                        ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [######                       ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#######                      ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [########                     ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#########                    ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [##########                   ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [###########                  ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [############                 ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#############                ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [##############               ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [###############              ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [################             ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#################            ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [##################           ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [###################          ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [####################         ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#####################        ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [######################       ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#######################      ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [########################     ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [#########################    ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [##########################   ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [###########################  ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_ [############################ ] 6/6  Installing : puppet-2.7.25-1.2.amzn1.x86_64                               6/6I, [2014-10-29T15:06:56.306097 #31104]  INFO -- default-amazon-201409:  
-I, [2014-10-29T15:06:56.459388 #31104]  INFO -- default-amazon-201409:   Verifying  : facter-1.6.18-3.21.amzn1.noarch                              1/6 
-  Verifying  : ruby18-libs-1.8.7.374-2.42.3.amzn1.x86_64                    2/6I, [2014-10-29T15:06:56.478680 #31104]  INFO -- default-amazon-201409:  
-  Verifying  : ruby18-1.8.7.374-2.42.3.amzn1.x86_64                         3/6I, [2014-10-29T15:06:56.495896 #31104]  INFO -- default-amazon-201409:  
-  Verifying  : augeas-libs-1.0.0-5.7.amzn1.x86_64                           4/6I, [2014-10-29T15:06:56.515722 #31104]  INFO -- default-amazon-201409:  
-  Verifying  : ruby-augeas-0.4.1-1.6.amzn1.x86_64                           5/6I, [2014-10-29T15:06:56.531634 #31104]  INFO -- default-amazon-201409:  
-  Verifying  : puppet-2.7.25-1.2.amzn1.x86_64                               6/6I, [2014-10-29T15:06:56.546630 #31104]  INFO -- default-amazon-201409:  
-I, [2014-10-29T15:06:56.619798 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:56.619880 #31104]  INFO -- default-amazon-201409: Installed:
-I, [2014-10-29T15:06:56.619916 #31104]  INFO -- default-amazon-201409:   puppet.x86_64 0:2.7.25-1.2.amzn1                                              
-I, [2014-10-29T15:06:56.619943 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:56.619967 #31104]  INFO -- default-amazon-201409: Dependency Installed:
-I, [2014-10-29T15:06:56.619993 #31104]  INFO -- default-amazon-201409:   augeas-libs.x86_64 0:1.0.0-5.7.amzn1                                          
-I, [2014-10-29T15:06:56.620020 #31104]  INFO -- default-amazon-201409:   facter.noarch 0:1.6.18-3.21.amzn1                                             
-I, [2014-10-29T15:06:56.620046 #31104]  INFO -- default-amazon-201409:   ruby-augeas.x86_64 0:0.4.1-1.6.amzn1                                          
-I, [2014-10-29T15:06:56.620072 #31104]  INFO -- default-amazon-201409:   ruby18.x86_64 0:1.8.7.374-2.42.3.amzn1                                        
-I, [2014-10-29T15:06:56.620129 #31104]  INFO -- default-amazon-201409:   ruby18-libs.x86_64 0:1.8.7.374-2.42.3.amzn1                                   
-I, [2014-10-29T15:06:56.620159 #31104]  INFO -- default-amazon-201409: 
-I, [2014-10-29T15:06:56.620469 #31104]  INFO -- default-amazon-201409: Complete!
-I, [2014-10-29T15:06:56.638684 #31104]  INFO -- default-amazon-201409: -----> Installing Chef Omnibus to install busser to run tests
-I, [2014-10-29T15:06:56.638770 #31104]  INFO -- default-amazon-201409: downloading https://www.getchef.com/chef/install.sh
-I, [2014-10-29T15:06:56.638804 #31104]  INFO -- default-amazon-201409:   to file /tmp/install.sh
-I, [2014-10-29T15:06:56.638830 #31104]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-29T15:06:57.125153 #31104]  INFO -- default-amazon-201409: Downloading Chef  for el...
-I, [2014-10-29T15:06:57.126467 #31104]  INFO -- default-amazon-201409: downloading https://www.getchef.com/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
-I, [2014-10-29T15:06:57.126535 #31104]  INFO -- default-amazon-201409:   to file /tmp/install.sh.2305/metadata.txt
-I, [2014-10-29T15:06:57.126558 #31104]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-29T15:06:57.586430 #31104]  INFO -- default-amazon-201409: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-29T15:06:57.586522 #31104]  INFO -- default-amazon-201409: md5	2355a7a93bc4cc353bee6de9e3bcb7ba
-I, [2014-10-29T15:06:57.586550 #31104]  INFO -- default-amazon-201409: sha256	278599ff185b680703e7a779db8674eeba843e9fe42a0ae06e01a9dfa9ac4d0e
-I, [2014-10-29T15:06:57.586713 #31104]  INFO -- default-amazon-201409: downloaded metadata file looks valid...
-I, [2014-10-29T15:06:57.586829 #31104]  INFO -- default-amazon-201409: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-29T15:06:57.586857 #31104]  INFO -- default-amazon-201409:   to file /tmp/install.sh.2305/chef-11.16.4-1.el6.x86_64.rpm
-I, [2014-10-29T15:06:57.586876 #31104]  INFO -- default-amazon-201409: trying wget...
-I, [2014-10-29T15:07:02.054927 #31104]  INFO -- default-amazon-201409: Comparing checksum with sha256sum...
-I, [2014-10-29T15:07:02.126271 #31104]  INFO -- default-amazon-201409: Installing Chef 
-I, [2014-10-29T15:07:02.126411 #31104]  INFO -- default-amazon-201409: installing with rpm...
-warning: I, [2014-10-29T15:07:02.137046 #31104]  INFO -- default-amazon-201409: /tmp/install.sh.2305/chef-11.16.4-1.el6.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)I, [2014-10-29T15:07:02.224361 #31104]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-29T15:07:02.234864 #31104]  INFO -- default-amazon-201409: Updating / installing...
-   1:chef-11.16.4-1.el6                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 52%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)I, [2014-10-29T15:07:03.437589 #31104]  INFO -- default-amazon-201409: ################################# [100%]
-I, [2014-10-29T15:07:09.137331 #31104]  INFO -- default-amazon-201409: Thank you for installing Chef!
-I, [2014-10-29T15:07:09.467913 #31104]  INFO -- default-amazon-201409: Transfering files to <default-amazon-201409>
-I, [2014-10-29T15:13:28.868051 #31104]  INFO -- default-amazon-201409: Could not retrieve pygpgme_installed: uninitialized constant Facter::Core
-Could not find dependency Package[rubygems] for Package[jake gem] at /tmp/kitchen/manifests/site.pp:99I, [2014-10-29T15:13:29.403714 #31104]  INFO -- default-amazon-201409: 
-E, [2014-10-29T15:13:29.660403 #31104] ERROR -- default-amazon-201409: Converge failed on instance <default-amazon-201409>.
-E, [2014-10-29T15:13:29.660603 #31104] ERROR -- default-amazon-201409: ------Exception-------
-E, [2014-10-29T15:13:29.660648 #31104] ERROR -- default-amazon-201409: Class: Kitchen::ActionFailed
-E, [2014-10-29T15:13:29.660679 #31104] ERROR -- default-amazon-201409: Message: SSH exited (1) for command: [ sudo -E puppet apply /tmp/kitchen/manifests/site.pp --modulepath=/tmp/kitchen/modules --manifestdir=/tmp/kitchen/manifests --fileserverconfig=/tmp/kitchen/fileserver.conf   ]
-E, [2014-10-29T15:13:29.660709 #31104] ERROR -- default-amazon-201409: ---Nested Exception---
-E, [2014-10-29T15:13:29.660739 #31104] ERROR -- default-amazon-201409: Class: Kitchen::SSHFailed
-E, [2014-10-29T15:13:29.660766 #31104] ERROR -- default-amazon-201409: Message: SSH exited (1) for command: [ sudo -E puppet apply /tmp/kitchen/manifests/site.pp --modulepath=/tmp/kitchen/modules --manifestdir=/tmp/kitchen/manifests --fileserverconfig=/tmp/kitchen/fileserver.conf   ]
-E, [2014-10-29T15:13:29.660794 #31104] ERROR -- default-amazon-201409: ------Backtrace-------
-E, [2014-10-29T15:13:29.660819 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
-E, [2014-10-29T15:13:29.660846 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
-E, [2014-10-29T15:13:29.660873 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
-E, [2014-10-29T15:13:29.660899 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
-E, [2014-10-29T15:13:29.660925 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
-E, [2014-10-29T15:13:29.660952 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
-E, [2014-10-29T15:13:29.660977 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
-E, [2014-10-29T15:13:29.661004 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2014-10-29T15:13:29.661030 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
-E, [2014-10-29T15:13:29.661055 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2014-10-29T15:13:29.661081 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
-E, [2014-10-29T15:13:29.661122 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-29T15:13:29.661151 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
-E, [2014-10-29T15:13:29.661178 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2014-10-29T15:13:29.661204 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
-E, [2014-10-29T15:13:29.661229 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2014-10-29T15:13:29.661255 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
-E, [2014-10-29T15:13:29.661281 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2014-10-29T15:13:29.661305 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
-E, [2014-10-29T15:13:29.661330 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
-E, [2014-10-29T15:13:29.661351 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
-E, [2014-10-29T15:13:29.661376 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
-E, [2014-10-29T15:13:29.661401 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
-E, [2014-10-29T15:13:29.661424 #31104] ERROR -- default-amazon-201409: /Users/joe/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
-E, [2014-10-29T15:13:29.661451 #31104] ERROR -- default-amazon-201409: ----------------------

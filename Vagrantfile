@@ -119,4 +119,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+
+  config.vm.provision "shell", path: "scripts/puppet-modules.sh"
+
+  config.vm.provision "puppet" do |puppet|
+    puppet.module_path = "puppet/modules"
+    puppet.manifests_path = "puppet/manifests"
+    puppet.manifest_file = "site.pp"
+    puppet.hiera_config_path = "puppet/hiera.yaml"
+    puppet.options = "--verbose --show_diff"
+    puppet.facter = { 
+      "role" => "ejabberd-node"
+    }
+  end
 end

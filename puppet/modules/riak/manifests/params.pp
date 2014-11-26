@@ -1,0 +1,3 @@
+class riak::params {
+
+}

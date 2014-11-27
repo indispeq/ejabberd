@@ -1,0 +1,21 @@
+{
+  "Gemfile": "4d14bb84ecad19df20e25a98862953c9",
+  "Gemfile.lock": "efdb0e577784fb6c9bb27da6452d23d1",
+  "README.md": "bd8aec3b57ce33f29e974e59cdb82c3c",
+  "lib/facter/osreleasemaj.rb": "0c809bebe4f2123eca5e5626cca7a3b3",
+  "lib/facter/pygpgme.rb": "f5953d2bcac062a43ffa5562c9ffbb4f",
+  "lib/puppet/parser/functions/get_read_token.rb": "ebae86c8eacc0ed73a2714469dbc21e0",
+  "manifests/init.pp": "b188e53de8ad37bf75900949d3ffa617",
+  "manifests/repo.pp": "0054bb2e33fffa74bf2703bba5bd894d",
+  "metadata.json": "1f4919629cd082185cf2e3f7a4c66c42",
+  "puppetlabs-release-el-5.noarch.rpm": "f2c682355c98d87fa58e0b662fd13775",
+  "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+  "templates/apt.erb": "649d4071994cb2d748df1b43865061ea",
+  "templates/yum.erb": "9dcc4aa66c9e22066980bee1f6e8615b",
+  "test/Puppetfile": "3b438ee8b483204dc47c6cc8777828fc",
+  "test/Puppetfile.lock": "efeac630cc21806f824adeb85a34b34e",
+  "test/test/integration/default/serverspec/jake_spec.rb": "13a1ecb01ad9939cd323a3cc2ba021a5",
+  "test/test/integration/default/serverspec/jakedotrb_spec.rb": "c0fb94ef87efcf2ba6b558bb005abac0",
+  "test/test/integration/default/serverspec/spec_helper.rb": "945aa48388b480176d9acbffa185beae",
+  "test/test/manifests/site.pp": "c656800d8e5fb126d3c7c8f712da1e55"
+}

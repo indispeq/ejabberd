@@ -1,4 +1,4 @@
-modules/wget
-modules/packagecloud
-modules/stdlib
+puppet/modules/wget
+puppet/modules/packagecloud
+puppet/modules/stdlib
 

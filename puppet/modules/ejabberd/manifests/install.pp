@@ -36,16 +36,14 @@ class ejabberd::install inherits ejabberd {
     cwd     => '/root',
     command => "/usr/bin/sudo su - root -c 'cd /root && /bin/tar xvzf ejabberd-14.07.tgz && cd ejabberd-14.07 && ./configure --enable-user=ejabberd --enable-zlib --prefix=/opt/ejabberd && /usr/bin/make && /usr/bin/make install'",
     require => [ Wget::Fetch['download-ejabberd-source'], User['ejabberd'], Package[$ejabberd_packages] ],
-
       creates => '/opt/ejabberd',
   }
 
-#  file { '/opt/ejabberd-14.07':
-#    ensure    => directory,
-#    owner     => 'ejabberd',
-#    recurse   => true,
-#    require   => Exec['unattended-ejabberd-install'],
-#  }
+  file { '/opt/ejabberd':
+    owner     => 'ejabberd',
+    recurse   => true,
+    require   => Exec['ejabberd-source-install'],
+  }
 
 #  exec { 'copy-init-script':
 #    command => '/bin/cp /opt/ejabberd-14.07/bin/ejabberd.init /etc/init.d/ejabberd',
@@ -65,9 +63,9 @@ class ejabberd::install inherits ejabberd {
   }
 
   user { 'ejabberd':
-    ensure => present,
-    system => true,
-    managehome => true,
+    ensure     => present,
+    system     => true,
+    home       => '/opt/ejabberd',
   }
 
 #  exec { 'ejabberdctl-installuser':
